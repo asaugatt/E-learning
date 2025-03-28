@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - KnowVation</title>
+  <link rel="stylesheet" href="main.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="logo">KnowVation™</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="instructors.html">Instructors</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Contact Form Section -->
+  <section class="contact-section">
+    <h1>Contact Us</h1>
+    <p>Have questions? Reach out to our team for assistance.</p>
+    
+    <form id="contactForm" class="contact-form">
+      <div class="form-group">
+        <label for="name">Name<sup>*</sup></label>
+        <input type="text" id="name" name="name" required />
+        <span class="error-message" id="nameError"></span>
+      </div>
+      
+      <div class="form-group">
+        <label for="email">Email<sup>*</sup></label>
+        <input type="email" id="email" name="email" required />
+        <span class="error-message" id="emailError"></span>
+      </div>
+      
+      <div class="form-group">
+        <label for="subject">Subject</label>
+        <input type="text" id="subject" name="subject" />
+      </div>
+      
+      <div class="form-group">
+        <label for="message">Message<sup>*</sup></label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <span class="error-message" id="messageError"></span>
+      </div>
+      
+      <button type="submit" class="cta-button">Send Message</button>
+    </form>
+    
+    <div class="contact-info">
+      <h2>Other Ways to Reach Us</h2>
+      <table class="contact-table">
+        <tr>
+          <th>Method</th>
+          <th>Details</th>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td>info@knowvation.edu</td>
+        </tr>
+        <tr>
+          <td>Phone</td>
+          <td>+977-9812345670</td>
+        </tr>
+        <tr>
+          <td>Address</td>
+          <td>Kirtipur, Kathmandu</td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>&copy; 2025 KnowVation. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="index.html">Home</a> | 
+      <a href="courses.html">Courses</a> | 
+      <a href="instructors.html">Instructors</a> | 
+      <a href="resources.html">Resources</a> | 
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
